@@ -1,20 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
-body {
-  background-color: linen;
-}
-
-h1 {
-  color: maroon;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sunrise~Sunset Dashboard - Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
 </head>
+
 <body>
+  
+    
+    <main>
 
-<h1>My Webpage</h1>
-<p>My name is V.S.Tejaswi and i am from India, i completed my bachelors in India in andhra pradesh after that i worked in tcs as salesforce developer there i redesigned web pages and tested them .</p>
+        <section class="py-5 text-center container sunrise-sunset-bg">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="display-5 fw-bold ">SunRise-Sunset API</h1>
+                    <p class="lead text-body-secondary"><b>LAB4</b></p>
+                    <p class="lead text-body-secondary">V.S.Tejaswi(A20526125)</p>
 
+                </div>
+            </div>
+        </section>
+
+
+        <div class="py-5 mb-4 bg-light container rounded-3">
+            <div class="container-fluid py-5">
+           
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="locationInput" placeholder="Enter a location...">
+		<div id="error-message" style="display: none; color: red;"></div>
+
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="searchLocationButton" type="button">Search</button>
+                </div>
+		
+
+  
+            </div>
+            <div class="card-body" id="search-result-container">
+                <!-- Content will be dynamically populated here -->
+            </div>
+
+            <div class="card-body" id="result-container-search">
+                <!-- Content will be dynamically populated here -->
+            </div>
+            <div class="card-body" id="result-container-search-tomorrow">
+                <!-- Content will be dynamically populated here -->
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to Top</a>
+            </p>
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
